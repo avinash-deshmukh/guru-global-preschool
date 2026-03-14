@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | Guru Global Preschool</title>
+
+<meta name="description"
+content="A colorful glimpse into the joyful classrooms, activities, and outdoor spaces at Guru Global Preschool."/>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css"/>
+
+</head>
+
+
+<body class="min-h-screen bg-gradient-to-b from-sky-50 via-pink-50 to-yellow-50 text-slate-800">
+
+<div class="flex min-h-screen flex-col">
+
+<!-- HEADER -->
+
+<header class="sticky top-0 z-40 bg-white/80 shadow-sm backdrop-blur">
+
+<div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-2 md:px-6">
+
+<a href="index.html" class="flex items-center flex-shrink-0">
+<img src="images/logo.jpg" alt="Guru Global Preschool Logo"
+class="h-24 md:h-28 w-auto object-contain">
+</a>
+
+
+<nav class="hidden items-center gap-6 text-sm font-semibold text-slate-700 md:flex">
+
+<a href="index.html" class="nav-link">Home</a>
+<a href="about.html" class="nav-link">About</a>
+<a href="programs.html" class="nav-link">Programs</a>
+<a href="activities.html" class="nav-link">Activities</a>
+<a href="gallery.html" class="nav-link text-sky-600">Gallery</a>
+<a href="admissions.html" class="nav-link">Admissions</a>
+<a href="contact.html" class="nav-link">Contact</a>
+
+<a href="https://wa.me/918451848733?text=Hello Guru Global Preschool, I would like admission information."
+target="_blank"
+class="ml-2 inline-flex items-center gap-2 rounded-xl bg-green-500 px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-green-600">
+
+WhatsApp
+
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- PAGE CONTENT -->
+
+<main class="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-8 px-4 py-8 md:px-6 md:py-12">
+
+<header class="max-w-3xl">
+
+<p class="mb-2 text-xs font-semibold uppercase tracking-[0.3em] text-sky-500">
+Gallery
+</p>
+
+<h1 class="mb-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+A peek into our colorful world
+</h1>
+
+<p class="text-sm leading-relaxed text-slate-700 sm:text-base">
+Explore joyful moments from classrooms, activities and outdoor play at Guru Global Preschool.
+</p>
+
+</header>
+
+
+
+<!-- MASONRY GALLERY -->
+
+<section class="gallery-masonry">
+
+<div class="gallery-item">
+<img src="images/gallery1.jpg" onclick="openLightbox(this.src)">
+</div>
+
+<div class="gallery-item">
+<img src="images/gallery2.jpg" onclick="openLightbox(this.src)">
+</div>
+
+<div class="gallery-item">
+<img src="images/gallery3.jpg" onclick="openLightbox(this.src)">
+</div>
+
+<div class="gallery-item">
+<img src="images/gallery4.jpg" onclick="openLightbox(this.src)">
+</div>
+
+<div class="gallery-item">
+<img src="images/gallery5.jpg" onclick="openLightbox(this.src)">
+</div>
+
+<div class="gallery-item">
+<img src="images/gallery6.jpg" onclick="openLightbox(this.src)">
+</div>
+
+<div class="gallery-item">
+<img src="images/gallery7.jpeg" onclick="openLightbox(this.src)">
+</div>
+
+<div class="gallery-item">
+<img src="images/gallery8.jpeg" onclick="openLightbox(this.src)">
+</div>
+
+<div class="gallery-item">
+<img src="images/gallery9.jpeg" onclick="openLightbox(this.src)">
+</div>
+
+</section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer class="mt-8 border-t border-sky-100 bg-white/80">
+
+<div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-5 text-xs text-slate-500 md:flex-row md:items-center md:justify-between md:px-6">
+
+<p>© <span id="footer-year"></span> Guru Global Preschool. All rights reserved.</p>
+
+<p class="flex flex-wrap gap-3">
+<span>We Care, We Create.</span>
+<span class="hidden md:inline">|</span>
+<span>Located in Lodha Regency, Dombivli East.</span>
+</p>
+
+</div>
+
+</footer>
+
+</div>
+
+
+
+<!-- LIGHTBOX VIEWER -->
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img">
+</div>
+
+
+
+<script src="js/script.js"></script>
+
+
+
+<!-- Floating WhatsApp Button -->
+
+<a
+href="https://wa.me/918451848733?text=Hello Guru Global Preschool, I would like admission details."
+target="_blank"
+class="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full bg-green-500 px-4 py-3 text-white shadow-lg hover:bg-green-600">
+
+Chat with us
+
+</a>
+
+
+<script>
+
+function openLightbox(src){
+document.getElementById("lightbox").style.display="flex";
+document.getElementById("lightbox-img").src=src;
+}
+
+function closeLightbox(){
+document.getElementById("lightbox").style.display="none";
+}
+
+</script>
+
+
+</body>
+</html>
