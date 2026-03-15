@@ -94,3 +94,14 @@ autoScroll = setInterval(scrollReviews,30);
 });
 
 }
+
+/* Mobile Menu Toggle */
+const menuBtn = document.getElementById('mobile-menu-toggle'); 
+const mobileNav = document.getElementById('mobile-menu');
+
+if (menuBtn && mobileNav) {
+  menuBtn.addEventListener('click', () => {
+    // Toggles Tailwind's 'hidden' class to show/hide the menu
+    mobileNav.classList.toggle('hidden');
+  });
+}
