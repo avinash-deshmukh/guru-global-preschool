@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,9 +12,11 @@
 content="A colorful glimpse into the joyful classrooms, activities, and outdoor spaces at Guru Global Preschool."/>
 
 <script src="https://cdn.tailwindcss.com"></script>
+
 <link rel="stylesheet" href="css/styles.css"/>
 
 </head>
+
 
 
 <body class="min-h-screen bg-gradient-to-b from-sky-50 via-pink-50 to-yellow-50 text-slate-800">
@@ -26,19 +30,31 @@ content="A colorful glimpse into the joyful classrooms, activities, and outdoor 
 <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-2 md:px-6">
 
 <a href="index.html" class="flex items-center flex-shrink-0">
-<img src="images/logo.jpg" alt="Guru Global Preschool Logo"
+
+<img src="images/logo.jpg"
+alt="Guru Global Preschool Logo"
 class="h-24 md:h-28 w-auto object-contain">
+
 </a>
 
+
+
+<!-- DESKTOP NAV -->
 
 <nav class="hidden items-center gap-6 text-sm font-semibold text-slate-700 md:flex">
 
 <a href="index.html" class="nav-link">Home</a>
+
 <a href="about.html" class="nav-link">About</a>
+
 <a href="programs.html" class="nav-link">Programs</a>
+
 <a href="activities.html" class="nav-link">Activities</a>
+
 <a href="gallery.html" class="nav-link text-sky-600">Gallery</a>
+
 <a href="admissions.html" class="nav-link">Admissions</a>
+
 <a href="contact.html" class="nav-link">Contact</a>
 
 <a href="https://wa.me/918451848733?text=Hello Guru Global Preschool, I would like admission information."
@@ -51,7 +67,61 @@ WhatsApp
 
 </nav>
 
+
+
+<!-- MOBILE MENU BUTTON -->
+
+<button
+id="mobile-menu-toggle"
+class="inline-flex items-center rounded-xl border border-sky-100 bg-sky-50 px-3 py-2 text-xs font-semibold text-sky-600 shadow-sm md:hidden"
+aria-label="Toggle navigation menu">
+
+<span class="mr-2">Menu</span>
+
+<svg
+class="h-4 w-4"
+xmlns="http://www.w3.org/2000/svg"
+fill="none"
+viewBox="0 0 24 24"
+stroke-width="2"
+stroke="currentColor">
+
+<path stroke-linecap="round" stroke-linejoin="round"
+d="M4 6h16M4 12h16M4 18h16"/>
+
+</svg>
+
+</button>
+
 </div>
+
+
+
+<!-- MOBILE NAV -->
+
+<nav
+id="mobile-menu"
+class="mobile-nav hidden border-t border-sky-100 bg-white/95 md:hidden">
+
+<div class="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 text-sm font-semibold text-slate-700">
+
+<a href="index.html" class="nav-link">Home</a>
+
+<a href="about.html" class="nav-link">About</a>
+
+<a href="programs.html" class="nav-link">Programs</a>
+
+<a href="activities.html" class="nav-link">Activities</a>
+
+<a href="gallery.html" class="nav-link text-sky-600">Gallery</a>
+
+<a href="admissions.html" class="nav-link">Admissions</a>
+
+<a href="contact.html" class="nav-link">Contact</a>
+
+</div>
+
+</nav>
 
 </header>
 
@@ -134,9 +204,13 @@ Explore joyful moments from classrooms, activities and outdoor play at Guru Glob
 <p>© <span id="footer-year"></span> Guru Global Preschool. All rights reserved.</p>
 
 <p class="flex flex-wrap gap-3">
+
 <span>We Care, We Create.</span>
+
 <span class="hidden md:inline">|</span>
+
 <span>Located in Lodha Regency, Dombivli East.</span>
+
 </p>
 
 </div>
@@ -147,7 +221,7 @@ Explore joyful moments from classrooms, activities and outdoor play at Guru Glob
 
 
 
-<!-- LIGHTBOX VIEWER -->
+<!-- LIGHTBOX -->
 
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
 <img id="lightbox-img">
@@ -159,7 +233,26 @@ Explore joyful moments from classrooms, activities and outdoor play at Guru Glob
 
 
 
-<!-- Floating WhatsApp Button -->
+<script>
+
+function openLightbox(src){
+
+document.getElementById("lightbox").style.display="flex";
+document.getElementById("lightbox-img").src=src;
+
+}
+
+function closeLightbox(){
+
+document.getElementById("lightbox").style.display="none";
+
+}
+
+</script>
+
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
 
 <a
 href="https://wa.me/918451848733?text=Hello Guru Global Preschool, I would like admission details."
@@ -171,19 +264,7 @@ Chat with us
 </a>
 
 
-<script>
-
-function openLightbox(src){
-document.getElementById("lightbox").style.display="flex";
-document.getElementById("lightbox-img").src=src;
-}
-
-function closeLightbox(){
-document.getElementById("lightbox").style.display="none";
-}
-
-</script>
-
 
 </body>
+
 </html>
