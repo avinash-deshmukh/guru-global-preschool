@@ -400,3 +400,34 @@ body {
       position:relative;
       z-index:0;
     }
+
+    /* Fix header layering */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+/* Ensure page content stays below header */
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* Prevent mobile horizontal scroll */
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+header {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
